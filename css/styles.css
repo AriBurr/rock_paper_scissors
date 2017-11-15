@@ -1,0 +1,131 @@
+body {
+  font-family: helvetica;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3em;
+  text-decoration: underline;
+  margin-bottom: inherit;
+}
+
+.instructions {
+  font-weight: bold;
+  margin-bottom: inherit;
+}
+
+button {
+  background: none;
+  border: 5px solid black;
+  border-radius: 5%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  color: white;
+  background-color: #000;
+}
+
+.grid-container {
+  display: grid;
+  max-width: 50%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1em;
+}
+
+.player-icon {
+  font-size: 32px;
+  padding: 3%;
+}
+
+.selection {
+  color: #43C59E;
+}
+
+.opponent {
+  color: #FE4A49;
+}
+
+#player-rock {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#player-paper {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#player-scissors {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#opponent-rock {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#opponent-paper {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#opponent-scissors {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#reset-btn {
+  grid-column: 2;
+  grid-row: 3;
+  padding: 5%;
+}
+
+.outcome {
+  text-align: center;
+  font-weight: bold;
+}
+
+#result {
+  grid-column: 1 / -1;
+  grid-row: 4;
+  justify-self: center;
+}
+
+#win {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+#lose {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+#draw {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.win {
+  background-color: #43C59E;
+  border-radius: 5%;
+}
+
+.lose {
+  background-color: #FE4A49;
+  border-radius: 5%;
+}
+
+.draw {
+  background-color: #2AB7CA;
+  border-radius: 5%;
+}
